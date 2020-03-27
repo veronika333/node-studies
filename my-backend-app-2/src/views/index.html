@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/b9a291d1aa.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <div class="top_container">
+                <div class="my_portfolio">
+                My portfolio
+            </div>
+                <div class="menu" type="button" onclick="menuFunction()">Menu <i class="fas fa-chevron-down"></i></div>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#about">About</a>
+                    <a href="#cv">CV</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                  </div>
+      
+              </div>
+        </nav>
+    </header>
+
+    <section id="about">
+        
+        <h1>Hi, I'm Veronika,</h1> <br><br>
+        <h2>Full-Stack Web Developer Student</h2><br><br>
+        <p><b>I’m currently learning JavaScript, and will learn React, Redux, Node, 
+            by January 2021.</b><div id="myDIV">I speak English and Russian, and have basic conversational ability 
+                in Finnish. I look forward to bringing my programming language skills (and regular language skills, if needed) to work as 
+                a member of your software development team.</div></p> <br><br>
+
+<button onclick="myFunction()" id="myBtn" type="button">Read more</button>
+
+    </section>
+
+    <section id="cv">
+        <div class="picture">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Profile_picture"/></div>
+           <div class="text"> <h2>Resume</h2><br>
+            <p>
+                I’m a Full Stack Software Development student at Helsinki Business 
+            College.
+             I’m excited to gain hands-on work experience to complement my coursework and kick-start
+              my software development career. As your intern, I’ll bring my problem-solving abilities 
+              and big-picture mindset to develop and improve technologies.
+               My classes, work experience, and extracurricular activities make me an ideal candidate 
+               for the intern position.
+            </p></div>
+        
+    </section>
+
+    <section id="skills">
+<div class="container_">
+<h2>My skills</h2><br>
+<p>I’m a Full Stack Software Development student at Helsinki Business College. I’m excited to gain hands-on work experience to complement my coursework and kick-start my software development career. As your intern, I’ll bring my problem-solving abilities and big-picture mindset to develop and improve technologies. My classes, work experience, and extracurricular activities make me an ideal candidate for the intern position.</p>
+<br>
+</div>
+<div class="flex_container">
+    <div class="flex_item">
+        <i class="fab fa-html5 fa-4x"></i>
+        <p>HTML</p>
+        <div class="container">
+          <div class="skills html">80%</div>
+        </div>
+    </div>
+    <div class="flex_item">
+        <i class="fab fa-css3-alt fa-4x"></i>
+
+
+        <p>CSS</p>
+        <div class="container">
+          <div class="skills css">40%</div>
+        </div>
+    </div>
+    <div class="flex_item"><i class="fab fa-js fa-4x" style="margin-top: -15%; margin-bottom: 15%;"></i>
+        <p>JavaScript</p>
+        <div class="container">
+          <div class="skills js">5%</div>
+        </div>
+    </div>
+    <div class="flex_item"><i class="fab fa-figma fa-4x"></i>
+        <p>UI Design</p>
+<div class="container">
+  <div class="skills design">5%</div>
+</div>
+
+    </div>
+</div>
+    </section>
+
+   
+<footer id="contact">
+<div class="footer_grid">
+        <div class="item">
+            <h2>Send me an email</h2><br>
+            <p>If you would like to contact me,<br> please send me an email to vera3@inbox.ru.</p>
+        </div>
+        <div class="item">
+            <h2>Call me</h2><br>
+            <p>+358468867611<br>
+                Monday - Friday <br>
+            8.00am - 19.00pm</p>
+        </div>
+        <div class="item">
+            <h2>Drop me a line</h2>
+
+
+
+            <form>
+                <div class="form-group">
+                  <label for="firstname">Name</label>
+                  <input type="text" name="firstname" id="firstname" />
+                </div>
+                <div class="form-group">
+                  <label for="lastname">Email</label>
+                  <input type="text" name="lastname" id="lastname" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Phone numbe</label>
+                  <input type="email" name="email" id="email" />
+                </div>
+                <div class="form-group">
+                  <label for="password1">Message</label>
+                  <input type="password" name="password1" id="password1" />
+                </div>
+                <button class="submit_button" type="button">Submit</button>
+              </form>
+
+
+
+
+        </div>
+</div>
+<button onclick="topFunction()" id="myBtn2" title="Go to top">Top <i class="fas fa-chevron-up"></i></button>
+</footer>  
+</body>
+</html>
