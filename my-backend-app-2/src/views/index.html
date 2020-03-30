@@ -114,9 +114,9 @@
             <h2>Drop me a line</h2>
 
 
-
+<!--
             <form>
-                <div class="form-group">
+                <div class="form-group" role="form" action="/send-email" method="post">
                   <label for="firstname">Name</label>
                   <input type="text" name="firstname" id="firstname" />
                 </div>
@@ -129,12 +129,23 @@
                   <input type="email" name="email" id="email" />
                 </div>
                 <div class="form-group">
-                  <label for="password1">Message</label>
-                  <input type="password" name="password1" id="password1" />
+                  <label for="message">Message</label>
+                  <input type="text" name="message" id="message" />
                 </div>
-                <button class="submit_button" type="button">Submit</button>
+                <button class="submit_button" type="submit" name="submit">Submit</button>
+              </form>-->
+              <form role="form" action="/send-email" method="post">
+                <br style="clear:both">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Message" maxlength="140" rows="7" required></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" id="submit" name="submit" class="btn btn-primary pull-right btn-submit">Send</button>
+                </div>
               </form>
-
 
 
 
